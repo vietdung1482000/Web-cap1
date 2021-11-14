@@ -154,12 +154,29 @@ header.sticky{
 .prevent .box-container .box p{
     color:var(--dark-blue);
     font-size: 1.4rem;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .prevent .box-container .box:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+
+
+.symptomstt{
+    background:url(../images/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.symptomstt .symContent{
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+
+
+
 
 .symptoms{
     background:url(../images/background-img.jpg) no-repeat;
@@ -317,6 +334,7 @@ header.sticky{
     transform: rotate(360deg);
 }
 
+
 .hand-wash .column{
     display: flex;
     justify-content: center;
@@ -348,6 +366,19 @@ header.sticky{
     font-size: 2rem;
     color:var(--blue);
 }
+
+.heading_ds{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--blue);
+}
+.ds .table{
+    font-size: 20px;
+    color:var(--blue);
+}
+
 
 .footer{
     background:url(../images/background-img.jpg) no-repeat;
