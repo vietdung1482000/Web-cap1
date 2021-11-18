@@ -11,8 +11,9 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- custom css file link  -->
+    <link rel="stylesheet" href="data.js">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="ds.css">
 </head>
 
 <body>
@@ -33,38 +34,40 @@
     <section class="symptoms" id="dsvipham">
         <h1 class="heading_ds">List of violating students</h1>
         <div class="column">
-            <div class="ds">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Class</th>
-                            <th scope="col">Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Thiên</td>
-                            <td>TPM6</td>
-                            <td>16:00 PM</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Dũng</td>
-                            <td>TPM3</td>
-                            <td>9:00 AM</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Mai</td>
-                            <td>CMU-TPM5</td>
-                            <td>10:30 AM</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="noidung">
+                <div class="thongtin">
+                    <p>Infomation</p>
+                </div>
+                <div class="content">
+                    <img src="./images/img1.PNG" alt="">
+                    <p class="tieude">Bạn hãy nhập <b class="td1"> Mã số sinh viên</b> để xem thông tin
+                    </p>
+                </div>
+                <div class="content2">
+                    <input class="form-control" id="search-input" type="text" placeholder="Mời bạn nhập mssv"
+                        aria-label="Search">
+                </div>
+                <div class="nut">
+                    <button class="button">Tiếp Tục</button>
+                </div>
+                <div class="chitiet">
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Mssv</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Class</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="myTable">
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -106,20 +109,131 @@
         <img src="images/scroll-img.png" alt="">
     </a>
 
+
+
+
     <!-- jquery cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
     <!-- custom js file link  -->
     <script src="script.js"></script>
+    <script>
+        var myArray = [
+
+            {
+                "id": "1",
+                "mssv": "2421120520",
+                "name": "Tran Van T",
+                "class": "CMU-TPM3",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "2",
+                "mssv": "24211201243",
+                "name": "nợ mai trả",
+                "class": "CMU-TPM2",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "3",
+                "mssv": "24211203487",
+                "name": "Nguyen van K",
+                "class": "CMU-TPM7",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "4",
+                "mssv": "24211202530",
+                "name": "Nguyen van D",
+                "class": "CMU-TPM5",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "5",
+                "mssv": "24211208097",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM3",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "6",
+                "mssv": "24211206598",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM2",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "7",
+                "mssv": "24211200241",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM4",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "8",
+                "mssv": "24211201266",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM5",
+                "time": "29/10/2021"
+            },            {
+                "id": "9",
+                "mssv": "24211205478",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM7",
+                "time": "29/10/2021"
+            },
+            {
+                "id": "10",
+                "mssv": "24211201235",
+                "name": "Nguyen van A",
+                "class": "CMU-TPM6",
+                "time": "29/10/2021"
+            }
+        ]
+
+
+        $('#search-input').on('keyup', function () {
+            var value = $(this).val()
+            // console.log('Value', value);
+
+            var data = searchTable(value, myArray)
+            buildTable(data)
+        })
+
+        buildTable(myArray)
+
+
+        function searchTable(value, data) {
+            var filteredData = [];
+
+            for (var i = 0; i < data.length; i++) {
+                value = value.toLowerCase()
+                var mssv = data[i].mssv.toLowerCase()
+
+                if(mssv.includes(value)){
+                    filteredData.push(data[i])
+                }
+            }
+            return filteredData
+        }
+
+
+        function buildTable(data) {
+            var table = document.getElementById('myTable');
+            table.innerHTML = '';
+            for (var i = 0; i < data.length; i++) {
+                var row = `
+                <tr>
+                    <td>${data[i].id}</td>
+                    <td>${data[i].mssv}</td>
+                    <td>${data[i].name}</td>
+                    <td>${data[i].class}</td>
+                    <td>${data[i].time}</td>
+                </tr>`
+                table.innerHTML += row
+            }
+        }
+    </script>
 </body>
 
 </html>
