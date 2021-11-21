@@ -50,6 +50,7 @@ header{
     top:0; left:0;
     z-index: 1000;
     padding:2rem;
+    background-color: white;
 }
 
 header .logo{
@@ -74,6 +75,7 @@ header .navbar a:hover{
     background: var(--blue);
     color:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-decoration: none;
 }
 
 header.sticky{
@@ -89,11 +91,12 @@ header.sticky{
 }
 
 .home{
-    background:url(./images/home-bg.jpg) no-repeat;
+    margin-top: 45px;
+    background:url(./images/bgHome.jpg);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
+
+
 
 .home .content{
     text-align: center;
@@ -101,14 +104,17 @@ header.sticky{
 }
 
 .home .content h1{
-    font-size: 5rem;
-    color:var(--dark-blue);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: -800px;
 }
 
 .home .content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     color:var(--blue);
     font-weight: normal;
+    margin-left: -800px;
 }
 
 .home .content .btn{
@@ -120,11 +126,83 @@ header.sticky{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     margin-top: 1rem;
     font-size: 1.7rem;
+    margin-left: -800px;
+}
+.slide{
+    margin-left: 200px;
+    margin-top: -350px;
+    position: absolute;
+    z-index: 999999999;
+}
+.slide .card-img-top{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+.card{
+    cursor: pointer;
+    margin: 10px;
+}
+.card-title{
+    color: black;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+.card-title:hover{
+ 
+    color: red;
+}
+.card-text{
+    color: black;
+    white-space: nowrap; 
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+}
+.intro{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+    background: #EDEDED;
+}
+.introImg{
+    margin-top: 10px;
+    position: relative;
+    margin-left: 100px;
+    width: 250px;
+    height: 150px;
+}
+.introImg1{
+    margin-top: 10px;
+    width: 250px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+
+.trangchu{
+    width: 1200px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-image: url(./images/background-img.jpg);
+}
+.trangchu .imgHome{
+    width: 200px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: -980px;
 }
 
 .home .content .btn:hover{
     background:var(--dark-blue);
 }
+
 
 .prevent .box-container{
     display: flex;
@@ -267,72 +345,27 @@ header.sticky{
 }
 
 .doctor{
-    background:url(../images/background-img.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     width: 100%;
+    background-color: red;
+}
+.imgLeft{
+    margin-top: -50px;
+}
+.imgL{
+    margin-top: 5px;
+    width: 180px;
+    height: 250px;
+}
+.imgR{
+    width: 200px;
+    height: 150px;
 }
 
-.doctor .box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.doctor .box-container .box{
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    padding:1rem;
-    margin:1.5rem;
-    text-align: center;
-    background:#fff;
-    border:.1rem solid rgba(0,0,0,.1);
-    width:33rem;
-}
 
-.doctor .box-container .box img{
-    margin:1rem;
-    border-radius: 50%;
-    height:20rem;
-    width:20rem;
-    object-fit: cover;
-    background:var(--blue);
-}
 
-.doctor .box-container .box h3{
-    font-size: 2rem;
-    color:var(--blue);
-}
 
-.doctor .box-container .box span{
-    font-size: 1.5rem;
-    color:var(--dark-blue);
-}
-
-.doctor .box-container .box .share{
-    border-top: .1rem solid rgba(0,0,0,.1);
-    padding:1rem;
-    margin-top: 1rem;
-}
-
-.doctor .box-container .box .share a{
-    border-radius: 50%;
-    height: 4.5rem;
-    width:4.5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
-    margin: .4rem;
-    background:#eee;
-    color:var(--blue);
-}
-
-.doctor .box-container .box .share a:hover{
-    background:var(--blue);
-    color:#fff;
-    transform: rotate(360deg);
-}
 
 
 .hand-wash .column{
