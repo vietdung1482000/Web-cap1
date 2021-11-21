@@ -129,7 +129,7 @@ header.sticky{
     margin-left: -800px;
 }
 .slide{
-    margin-left: 200px;
+    margin-left: 220px;
     margin-top: -350px;
     position: absolute;
     z-index: 999999999;
@@ -143,7 +143,7 @@ header.sticky{
     cursor: pointer;
     margin: 10px;
 }
-.card-title{
+.titleTin, .card-title{
     color: black;
     white-space: nowrap; 
     width: 200px; 
@@ -151,8 +151,8 @@ header.sticky{
     text-overflow: ellipsis;
     font-size: 18px;
 }
-.card-title:hover{
- 
+.titleTin:hover{
+    text-decoration: none;
     color: red;
 }
 .card-text{
@@ -253,9 +253,6 @@ header.sticky{
 }
 
 
-
-
-
 .symptoms{
     background:url(../images/background-img.jpg) no-repeat;
     background-size: cover;
@@ -350,17 +347,229 @@ header.sticky{
     background-color: red;
 }
 .imgLeft{
-    margin-top: -50px;
+    margin-top: -80px;
 }
 .imgL{
     margin-top: 5px;
     width: 180px;
     height: 250px;
 }
-.imgR{
-    width: 200px;
-    height: 150px;
+.imgRight{
+    background-image: url(./images/background-img.jpg);
+    width: 600px;
+    height: 850px;
+    margin-top: -80px;
+    margin-left: 20px;
 }
+.imgR{
+    margin-top: 20px;
+    width: 350px;
+    height: 300px;
+}
+.titleR{
+    margin-top: 10px;
+}
+.tieude{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.noidung{
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.content1, .content2, .content3,
+.content4, .content5, .content6{
+    border-bottom: 1px solid black;
+}
+.content1 .title1 a{
+    color: white;
+}
+.content2 .title2 a{
+    color: white;
+}
+.content3 .title3 a{
+    color: white;
+}
+.content4 .title4 a{
+    color: white;
+}
+.content5 .title5 a{
+    color: white;
+}
+.content6 .title6 a{
+    color: white;
+}
+.content7 .title7 a{
+    color: white;
+}
+.content8 .title8 a{
+    color: white;
+}
+
+
+.img1 {
+    margin-top: -70px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title1{
+    margin-left: -15px;
+    margin-top: -65px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title2{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img3{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title3{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img4{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title4{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img5{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title5{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img6{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title6{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+
+.img7{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title7{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+.img8{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 80px;
+    border: 4px solid white;
+}
+.title8{
+    margin-left: -15px;
+    margin-top: 13px;
+    color: black;
+    width: 300px;
+    font-size: 10px;
+}
+
+
+
+
+.graybb{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    transition: transform .2s;
+}
+.column:hover{
+    transform: scale(1.2); 
+}
+  
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 
