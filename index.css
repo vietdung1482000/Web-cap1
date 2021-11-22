@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
 :root{
     --blue:#3c6382;
     --dark-blue:#0a3d62;
 }
+
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
@@ -13,19 +15,23 @@
     text-transform: capitalize;
     transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
 }
+
 *::selection{
     background:var(--dark-blue);
     color:#fff;
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 section{
     min-height: 100vh;
     padding:1rem 9%;
     padding-top: 8rem;
 }
+
 .heading{
     text-align: center;
     color:var(--blue);
@@ -34,6 +40,7 @@ section{
     font-weight: normal;
     padding:1rem;
 }
+
 header{
     width:100%;
     display: flex;
@@ -45,13 +52,16 @@ header{
     padding:2rem;
     background-color: white;
 }
+
 header .logo{
     font-size: 2.5rem;
     color:var(--dark-blue);
 }
+
 header .logo span{
     color:var(--blue);
 }
+
 header .navbar a{
     font-size: 1.7rem;
     margin-left: .7rem;
@@ -59,6 +69,7 @@ header .navbar a{
     border-radius: .5rem;
     color:var(--dark-blue);
 }
+
 header .navbar a.active,
 header .navbar a:hover{
     background: var(--blue);
@@ -66,10 +77,12 @@ header .navbar a:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     text-decoration: none;
 }
+
 header.sticky{
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+
 #menu{
     font-size: 3rem;
     color:var(--blue);
@@ -77,29 +90,31 @@ header.sticky{
     display: none;
 }
 
-
-/* chi co the tach tu day xuong */
 .home{
     margin-top: 45px;
     background:url(./images/bgHome.jpg);
     background-size: cover;
 }
+
 .home .content{
     text-align: center;
     padding-top: 3rem;
 }
+
 .home .content h1{
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
     margin-left: -800px;
 }
+
 .home .content h3{
     font-size: 3rem;
     color:var(--blue);
     font-weight: normal;
     margin-left: -800px;
 }
+
 .home .content .btn{
     display: inline-block;
     padding:.7rem 3rem;
@@ -111,6 +126,7 @@ header.sticky{
     font-size: 1.7rem;
     margin-left: -800px;
 }
+
 .slide{
     margin-left: 220px;
     margin-top: -350px;
@@ -146,6 +162,7 @@ header.sticky{
     text-overflow: ellipsis;
     font-size: 10px;
 }
+
 .intro{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -183,6 +200,8 @@ header.sticky{
 .home .content .btn:hover{
     background:var(--dark-blue);
 }
+
+
 .doctor{
     background-attachment: fixed;
     width: 100%;
@@ -211,13 +230,13 @@ header.sticky{
 .titleR{
     margin-top: 10px;
 }
-.titleRR{
+.tieude{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
     text-align: justify;
 }
-.contentRR{
+.noidung{
     text-align: justify;
     margin-top: 15px;
     font-size: 15px;
@@ -226,23 +245,38 @@ header.sticky{
 .content4, .content5, .content6{
     border-bottom: 1px solid black;
 }
-.content1 .title1 a,
-.content2 .title2 a,
-.content3 .title3 a,
-.content4 .title4 a,
-.content5 .title5 a,
-.content6 .title6 a,
-.content7 .title7 a,
+.content1 .title1 a{
+    color: white;
+}
+.content2 .title2 a{
+    color: white;
+}
+.content3 .title3 a{
+    color: white;
+}
+.content4 .title4 a{
+    color: white;
+}
+.content5 .title5 a{
+    color: white;
+}
+.content6 .title6 a{
+    color: white;
+}
+.content7 .title7 a{
+    color: white;
+}
 .content8 .title8 a{
     color: white;
 }
+
+
 .img1 {
     margin-top: -70px;
     margin-left: 5px;
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title1{
     margin-left: -15px;
@@ -257,7 +291,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title2{
     margin-left: -15px;
@@ -272,7 +305,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title3{
     margin-left: -15px;
@@ -287,7 +319,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title4{
     margin-left: -15px;
@@ -302,7 +333,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title5{
     margin-left: -15px;
@@ -317,7 +347,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title6{
     margin-left: -15px;
@@ -326,13 +355,13 @@ header.sticky{
     width: 300px;
     font-size: 10px;
 }
+
 .img7{
     margin-top: 10px;
     margin-left: 5px;
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title7{
     margin-left: -15px;
@@ -347,7 +376,6 @@ header.sticky{
     width: 120px;
     height: 80px;
     border: 4px solid white;
-    cursor: pointer;
 }
 .title8{
     margin-left: -15px;
@@ -356,12 +384,16 @@ header.sticky{
     width: 300px;
     font-size: 10px;
 }
+
+
+
+
 .graybb{
     margin-top: 20px;
     margin-bottom: 50px;
     position: relative;
 }
-.graybb .column {
+.column {
     float: left;
     width: 33.33%;
     padding: 50px;
@@ -371,211 +403,70 @@ header.sticky{
     color: white;
     transition: transform .2s;
 }
-.graybb .column:hover{
+.column:hover{
     transform: scale(1.2); 
 }
-/* trang chu den day */
-
-
-/*start nganngua.html*/
-.prevent .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  
+.containerTab {
+    padding: 20px;
+    color: white;
 }
-.prevent .box-container .box{
-    flex:1 1 30rem;
-    border-radius: .5rem;
-    margin:1rem;
-    padding:1rem;
-    text-align: center;
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-.prevent .box-container .box img{
-    height:12rem;
-    padding:1rem;
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
-.prevent .box-container .box h3{
-    color:var(--blue);
-    font-size: 2rem;
-}
-.prevent .box-container .box p{
-    color:var(--dark-blue);
-    font-size: 1.4rem;
-    padding: 1rem;
-}
-.prevent .box-container .box:hover{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-/*end nganngua.html*/
-
-/*start trieuchung.html*/
-.symptomstt{
-    background:url(../images/background-img.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.symptomstt .symContent{
-    color: var(--dark-blue);
-    font-size: 1.4rem;
-    padding: 1rem;
-}
-.symptoms{
-    background:url(../images/background-img.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.symptoms .column{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.symptoms .column .main-image img{
-    width: 43vh;
-}
-.symptoms .column .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.symptoms .column .box-container .box{
-    margin:1rem;
-    text-align: center;
-}
-.symptoms .column .box-container .box img{
-    width:20rem;
-    padding:1rem;
-}
-.symptoms .column .box-container .box h3{
-    font-size: 2rem;
-    color:var(--blue);
-}
-/*end trieuchung.html*/
-
-/*start giaiphap.html*/
-.precautions .column{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.precautions .column .box-container{
-    margin:1.5rem;
-    flex:1 1 50rem;
-    border:.1rem solid rgba(0,0,0,.1);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-}
-.precautions .column .box-container .title{
-    padding:1.5rem .5rem;
-    text-align: center;
-    font-size: 2.5rem;
-    background:var(--blue);
-    color:#fff;
-}
-.precautions .column .box-container:last-child .title{
-    background:#ff3300;
-}
-.precautions .column .box-container .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:1rem;
-}
-.precautions .column .box-container .box img{
-    width:15rem;
-    padding:1rem;
-}
-.precautions .column .box-container .box h3{
-    font-size: 2rem;
-    color:var(--blue);
-}
-.precautions .column .box-container .box p{
-    font-size: 1.2rem;
-    color:var(--dark-blue);
-    padding:1rem 0;
-}
-/*end giaiphap.html*/
-
-/* start of ruatay.html */
-.hand-wash .column{
-    display: flex;
-    justify-content: center;
-}
-.hand-wash .column .main-image img{
-    width:25vw;
-}
-.hand-wash .column .box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.hand-wash .column .box-container .box{
-    text-align: center;
-    margin:2rem;
-}
-.hand-wash .column .box-container .box img{
-    width: 17rem;
-    height: 17rem;
-    padding:1rem;
-}
-.hand-wash .column .box-container .box h3{
-    font-size: 2rem;
-    color:var(--blue);
-}
-/* end of ruatay.html */
-
-/* .heading_ds{
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:var(--blue);
-}
-.ds .table{
-    font-size: 20px;
-    color:var(--blue);
-} */
 
 
 
-/* start of footer */
+
 .footer{
     background:url(../images/background-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .footer .box-container{
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer .box-container .box{
     flex:1 1 25rem;
     margin:2rem;
 }
+
 .footer .box-container .box h3{
     font-size: 2.5rem;
     color:var(--blue);
     padding:1rem 0;
 }
+
 .footer .box-container .box p{
     font-size: 1.5rem;
     color:var(--dark-blue);
     padding:.5rem 0;
 }
+
 .footer .box-container .box a{
     font-size: 1.5rem;
     color:var(--dark-blue);
     padding:.5rem 0;
     display: block;
 }
+
 .footer a:hover{
     text-decoration: underline;
 }
+
 .footer .credit{
     font-size: 2rem;
     font-weight: normal;
@@ -584,18 +475,22 @@ header.sticky{
     padding:2.5rem 1rem;
     color:var(--dark-blue);
 }
+
 .footer .credit a{
     color:var(--blue);
 }
+
 .scroll-top{
     position: fixed;
     bottom:7.5rem; right:1.5rem;
     z-index: 1000;
 }
+
 .scroll-top img{
     width:8rem;
     animation: float 3s linear infinite;
 }
+
 @keyframes float{
     100%, 0%{
         transform: translateY(0rem);
@@ -606,18 +501,13 @@ header.sticky{
     }
 
 }
-/* end of footer */
 
 
 
 
 
 
-
-
-
-
-/*(khong duoc chi sua phan ben duoi)*/
+/* media queries  */
 
 @media (max-width:1200px){
 
