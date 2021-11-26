@@ -156,13 +156,107 @@ h2{
 	color: black;
 	display: inline-block;
 }
-.titleMain{
-    color: #d63031;
-}
 
 .content{
     width: 80%;
+    margin-bottom: 100px;
 }
+
+
+
+
+/* start */
+.content1{
+    border-bottom: 1px dashed #c6c6c6;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+.imageBig{
+    width: 100%;
+}
+.titleBig{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: 'Roboto Condensed Bold';
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.titleBig a{
+    text-decoration: none;
+    color: black;
+}
+.titleBig a:hover{
+    color: #d63031;
+}
+.contentBig{
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+.content2{
+    border-bottom: 1px dashed #c6c6c6;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+.imageSmall{
+    width: 100%;
+}
+.titleSmall{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed Bold';
+    line-height: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.titleSmall a{
+    text-decoration: none;
+    color: black;
+}
+.titleSmall a:hover{
+    color: #d63031;
+}
+.contentSmall{
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+
+
+.content3{
+    border-bottom: 1px dashed #c6c6c6;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
 
 .number{
     position: absolute;
@@ -220,37 +314,6 @@ h2{
 
 
 
-@media screen and (max-width: 600px)
-{
-	.sidenav{
-		padding-top: 15px;
-		width: 155px;
-
-	}
-	.sidenav a{
-		padding-left: 20px;
-		font-size: 18px;
-	}
-	.main{
-		margin-left: 32%;
-		font-size: 15px;
-	}
-	p{
-		display: inline-block;
-	}
-}
-
-/* end */
-
-
-
-
-
-
-
-
-
-
 
 .scroll-top{
     position: fixed;
@@ -271,25 +334,6 @@ h2{
         transform: translateY(-3rem);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -371,6 +415,27 @@ h2{
         font-size: 3.5rem;
     }
 
+}
+
+
+@media screen and (max-width: 600px)
+{
+	.sidenav{
+		padding-top: 15px;
+		width: 155px;
+
+	}
+	.sidenav a{
+		padding-left: 20px;
+		font-size: 18px;
+	}
+	.main{
+		margin-left: 32%;
+		font-size: 15px;
+	}
+	p{
+		display: inline-block;
+	}
 }
 
 @media (max-width:450px){
