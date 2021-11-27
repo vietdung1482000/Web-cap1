@@ -397,22 +397,48 @@ header.sticky{
 .graybb{
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-left: 60px;
     position: relative;
 }
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-    transition: transform .2s;
-}
-.column:hover{
-    transform: scale(1.2); 
+
+.overlayImg {
+    position: relative;
 }
   
+.imageover {
+    display: block;
+    width: 350px;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 350px;
+    height:0;
+    transition: .5s ease;
+}
+  
+.overlayImg:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ 
 .containerTab {
     padding: 20px;
     color: white;
@@ -447,9 +473,11 @@ header.sticky{
 
 .footer .box-container .box{
     flex:1 1 25rem;
-    margin:2rem;
+    margin: 2rem;
 }
-
+.footer .box-container  .box-footer{
+    margin-top: 50px;
+}
 .footer .box-container .box h3{
     font-size: 2.5rem;
     color:var(--blue);
@@ -467,10 +495,12 @@ header.sticky{
     color:var(--dark-blue);
     padding:.5rem 0;
     display: block;
+    text-decoration: none;
 }
 
-.footer a:hover{
-    text-decoration: underline;
+.footer .box-container .box a:hover{
+    color: brown;
+    text-decoration: none;
 }
 
 .footer .credit{

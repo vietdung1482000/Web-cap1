@@ -234,8 +234,6 @@ h2{
     font-size: 12px;
 }
 
-
-
 .content3{
     border-bottom: 1px dashed #c6c6c6;
     padding-top: 10px;
@@ -260,7 +258,7 @@ h2{
 
 .number{
     position: absolute;
-    z-index: 9999;
+    z-index: 99;
 	width: 20%;
 	top: 0;
 	left: 0;
