@@ -411,7 +411,7 @@ header.sticky{
 
 /*start trieuchung.html*/
 .symptomstt{
-    background:url(../images/background-img.jpg) no-repeat;
+    /* background:url(../images/background-img.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

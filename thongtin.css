@@ -82,7 +82,6 @@ header.sticky{
 
 /* start */
 .symptomstt{
-    background:url(../images/background-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -94,12 +93,12 @@ header.sticky{
 }
 .imgDTU{
     position: relative;
-    width: 50%;
+    width: 20%;
     max-width: 300px;
 }
 .img{
     display: block;
-    width: 800px;
+    width: 600px;
     height: 500px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -110,7 +109,7 @@ header.sticky{
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    width: 800px;
+    width: 600px;
     transition: .5s ease;
     opacity:0;
     color: white;
@@ -123,7 +122,6 @@ header.sticky{
 }
 
 .sidenav{
-	/* background: white; */
 	position: absolute;
 	height: 100%;
 	width: 18%;
@@ -133,13 +131,15 @@ header.sticky{
 	overflow-x: hidden;
 	padding-top: 20px;
     margin-top: 95px;
+    margin-left: 150px;
 }
 .sidenav a{
 	color: black;
 	padding: 10px 15px 10px 16px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 	display: block;
+    border-bottom: 1px solid #b2bec3;
 }
 .sidenav a:hover{
 	color: red;
@@ -148,7 +148,12 @@ h2{
 	padding: 10px 15px 10px 16px;
 	color: rgb(10, 10, 10);
 	border-bottom-style: solid;
-    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto Condensed Bold';
+    background: #fff;
 }
 .main{
 	margin-left: 170px;
@@ -156,12 +161,22 @@ h2{
 	color: black;
 	display: inline-block;
 }
+.mainh2{
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto Condensed Bold';
+    background: #fff;
+}
 .titleMain{
     color: #d63031;
+    margin-left: -10px;
 }
 
 .content{
-    width: 80%;
+    margin-left: 150px;
+    width: 65%;
 }
 
 .number{
@@ -172,7 +187,7 @@ h2{
 	left: 0;
 	padding-top: 20px;
     margin-top: 100px;
-    margin-left: 1200px;
+    margin-left: 1150px;
 }
 .titleNumber{
     color: white;
@@ -186,7 +201,7 @@ h2{
 
 .mainContent{
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     justify-content: center;
 }
 
